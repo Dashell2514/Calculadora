@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Calculador Con jQuery</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<h2>Calculadora[JavaScript]</h2>
+		<table>
+		<div class="numbers">
+		<form name="calculator">
+		<textarea id="resultado" name="total" disabled=""></textarea>
+		</form>
+
+		<button id="delete" onclick="del()"><img src="img/del.png"></button>
+		</div>
+			<tr>
+				<td><button id="uno"><i>1</i></button></td>
+				<td><button id="dos"><i>2</i></button></td>
+				<td><button id="tres"><i>3</i></button></td>
+				<td><button class="divide" id="dividir">÷</button></td>								
+			</tr>
+			<tr>
+				<td><button id="cuatro"><i>4</i></button></td>
+				<td><button id="cinco"><i>5</i></button></td>
+				<td><button id="seis"><i>6</i></button></td>
+				<td><button id="multiplicar" class="multi">x</button></td>
+			</tr>
+			<tr>
+				<td><button id="siete"><i>7</i></button></td>
+				<td><button id="ocho"><i>8</i></button></td>
+				<td><button id="nueve"><i>9</i></button></td>
+				<td><button id="restar" class="less">&#45</button></td>								
+			</tr>
+			<tr>
+				<td><button id="cero"><i>0</i></button></td>
+				<td><button id="porcent">%</button></td>
+				<td><button id="pow" onclick="raiz()"><img src="img/pow.png"></button></td>
+				<td><button id="sumar">&#43</button></td>		
+			</tr>
+			<tr>
+				<td><button id="pow3" onclick="raiz_3()"><img src="img/pow3.png"></button></td>
+				<td><button class="remove" id="remove"><img src="img/remove.png"></button></td>
+				<td><button class="result" id="showResult">=</button></td>
+				<td><button class="linux"><img src="img/linux.png"></button></td>
+			</tr>
+		</table>
+		<div class="blur"></div>
+	</div>
+	<div class="show-me"><span id="span">Resultado: <i id="show"></i></span></div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
